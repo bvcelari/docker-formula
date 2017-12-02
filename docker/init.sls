@@ -51,7 +51,7 @@ purge old packages:
 
 docker package repository:
   pkgrepo.managed:
-    - name: name: deb https://download.docker.com/linux/ubuntu xenial stable
+    - name: deb https://download.docker.com/linux/ubuntu xenial stable
     - humanname: {{ grains["os"] }} {{ grains["oscodename"]|capitalize }} Docker Package Repository
     - keyid: 8D81803C0EBFCD88
 {%- endif %}
