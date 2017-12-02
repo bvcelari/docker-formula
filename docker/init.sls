@@ -98,7 +98,7 @@ docker package:
     {%- if grains['os']|lower == 'amazon' or grains['os']|lower == 'fedora'%}
     - name: docker
     {%- else %}
-    - name: docker-engine
+    - name: docker-ce
     {%- endif %}
     {%- endif %}
   {%- endif %}
